@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
+import header_logo from "./header_logo.png";
 
 class Home extends Component {
     render() {
@@ -7,25 +8,24 @@ class Home extends Component {
             <header id="header">
                 <div className="container">
 
-                    <div id="logo">
-                        <h1><a href="#intro" className="scrollto">LOGO</a></h1>
+                    <div id="logo" >
+                        <a href="#intro" className="scrollto">
+                            <img className="img-responsive v1" src={header_logo} alt="logo" />
+                        </a>
+                        <div class="vl" ><h1>Serendib</h1></div>
                     </div>
+
 
                     <nav id="nav-menu">
                         <ul className="nav-menu">
                             <li><a href="#intro">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Tours</a></li>
-                            <li><a href="#Hotels">Hotels</a></li>
-                            <li><a href="#Transfers">Transfers</a></li>
-                            <li><a href="#Blog">Blog</a></li>
-                            <li><a href="#Gallery">Gallery</a></li>
-                            <li><a href="#get-in-touch">Get In Touch</a></li>
+                            <li><a href="#explore">Explore</a></li>
+
                         </ul>
                     </nav>
+
                 </div>
             </header>
-
         );
     }
 }
