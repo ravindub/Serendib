@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
 import { Card } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
-//import { EventCard.Img } from 'react-bootstrap';
-//import { EventCard.body } from 'react-bootstrap';
-//import { EventCard.Title } from 'react-bootstrap';
-//import { EventCard.Text } from 'react-bootstrap';
+import image from './4.jpg';
+
 class EventCard extends Component {
     render() {
         return (
             <div>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="./4.jpg" />
+                <Card style={{ width: '50rem' }}>
+                    <Card.Img variant="top" src={image} />
                     <Card.Body>
                         <Card.Title>Trip to somewhere</Card.Title>
                         <Card.Text>
