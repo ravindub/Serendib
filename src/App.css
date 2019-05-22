@@ -1,3 +1,6 @@
+.nav_name{
+  display: flex;
+}
 .App {
   text-align: center;
 }
@@ -17,6 +20,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+hr{
+  border-bottom: 1px solid #1b1b1b;
+  margin: 0;
+}
+.nav-menu a{
+  font-family: 'Baloo Bhai', cursive;
+}
+#header #logo h1{
+  font-family: 'Baloo Bhai', cursive;
 }
 
 .App-link {

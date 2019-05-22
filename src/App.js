@@ -19,26 +19,28 @@ class App extends Component {
         <Router>
           <header id="header">
             <div className="container">
-              <Link to="/">
               <div id="logo">
-                  <img className="img-responsive v1" src={header_logo} alt="logo"/>
-                <div className="vl"><h1>Serendib</h1></div>
+                  <div className="nav_name">
+                      <div><img className="img-responsive" src={header_logo} alt="logo"/></div>
+                      <div className="vl"><h1>Serendib</h1></div>
+                  </div>
               </div>
-              </Link>
               <nav id="nav-menu">
                 <ul className="nav-menu">
                   {/*  Please use Link tag to connect to the routes, anything you want to add to change page use this tag,
                   then it will easy to redirect*/}
-                  <li><a href="#intro"><Link to="/">Home</Link></a></li>
-                    <li><a href="#intro"><Link to="/eventManager">Event Manager</Link></a></li>
-                  <li><a href="#explore"><Link to="/explore">Explore</Link></a></li>
-                    <li><a href="#explore"><Link to="/blog">Blog</Link></a></li>
+                  <li><Link to="/">Home</Link></li>
+                    <li><Link to="/eventManager">Event Manager</Link></li>
+                  <li><Link to="/explore">Explore</Link></li>
+                    <li><Link to="/blog">Blog</Link></li>
                 </ul>
               </nav>
 
             </div>
           </header>
+
           <body id="body">
+          <hr/>
           {/*<empty>Do not add anything here</empty>*/}
           </body>
 
