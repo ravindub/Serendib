@@ -25,3 +25,8 @@
     alignment: center;
     float: left;
 }
+
+#center_content_div {
+    height: 220px;
+    overflow-y: scroll;
+}
