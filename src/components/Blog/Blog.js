@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import recent_pic from "./recent.png";
 import old_pic from "./old.png";
 import share from './share-512.png';
-import addbtn from './Button-512.png';
+import add_button from './Button-512.png';
 import './Blog.css';
 
 class Blog extends Component {
@@ -30,11 +30,12 @@ class Blog extends Component {
                     </div>
                 </div>
                 <div id="centerDiv">
+                    <form>
                     <textarea rows="12" cols="100"/><br/>
                     <a><img className="old_icon" src={share}  alt="icon"/> </a>
-                    <a><img className="old_icon" src={addbtn}  alt="icon"/> </a>
+                    <a><img className="old_icon" src={add_button}  alt="icon"/> </a>
                     <input type="file" name="pic" accept="image/*" size="30"/>
-
+                    </form>
 
 
                 </div>
