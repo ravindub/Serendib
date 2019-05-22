@@ -1,41 +1,48 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import recent_pic from "./recent.png";
+import old_pic from "./old.png";
+import share from './share-512.png';
+import addbtn from './Button-512.png';
 import './Blog.css';
-import RecentBlog from "../RecentBlog/RecentBlog";
-import Explore from "../Explore/Explore";
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Switch
-} from 'react-router-dom';
 
-class  Blog extends Component {
+class Blog extends Component {
+
+    constructor(props, context) {
+        super(props, context)
+
+    }
 
     render() {
 
         return (
-            <Router>
-           <div id="mainDiv">
-               <div id="leftDiv">
-                   <Link to="/most_recent" >
-                <a id="mostReasonLi">
-                    <img className="recent_icon" src={recent_pic} alt="icon" /> Most Recent
-                </a>
-                   </Link>
-               </div>
-               <div id="centerDiv">
-                   <Switch>
-                       <Route exact path="/most_recent" component={RecentBlog} />
-                       <Route path="/explore" component={Explore} />
-                   </Switch>
-               </div>
-               <div id="rightDiv"></div>
-               <div>
 
-               </div>
-           </div>
-            </Router>
+            <div id="mainDiv">
+                <div id="leftDiv">
+                    <div id="list1">
+                    <a id="mostReasonLi" href="">
+                        <img className="recent_icon" src={recent_pic} alt="icon"/> Most Recent
+                    </a><br/>
+                    </div>
+                    <div id="list2">
+                    <a id="mostReasonLi" href="">
+                        <img className="old_icon" src={old_pic}  alt="icon"/> Old Posts
+                    </a><br/>
+                    </div>
+                </div>
+                <div id="centerDiv">
+                    <textarea rows="12" cols="100"/><br/>
+                    <a><img className="old_icon" src={share}  alt="icon"/> </a>
+                    <a><img className="old_icon" src={addbtn}  alt="icon"/> </a>
+                    <input type="file" name="pic" accept="image/*" size="30"/>
+
+
+
+                </div>
+                <div id="rightDiv"></div>
+                <div>
+
+                </div>
+            </div>
         );
     }
 }
